@@ -10,6 +10,7 @@ app.use(cors());
 db.serialize( () => {
 	db.run('CREATE TABLE items (id_items INTEGER PRIMARY KEY AUTOINCREMENT,id_types INTEGER,produits VARCHAR(50), prix INTEGER, url VARCHAR(50), FOREIGN KEY (id_types) REFERENCES typesofproducts (id_types))');
 	db.run('INSERT INTO items (id_types,produits,prix,url) VALUES (?, ?, ?, ?)', 1,"appleA",200,"img/AppleA.png");
+	db.run('INSERT INTO items (id_types,produits,prix,url) VALUES (?, ?, ?, ?)', 1,"appleA",200,"img/AppleA.jpg");
 	db.run('INSERT INTO items (id_types,produits,prix,url) VALUES (?, ?, ?, ?)', 1,"samsungA",300,"img/SamsungA.png");
 	db.run('INSERT INTO items (id_types,produits,prix,url) VALUES (?, ?, ?, ?)', 1,"nokiaA",500,"img/NokiaA.jpg");
 	db.run('INSERT INTO items (id_types,produits,prix,url) VALUES (?, ?, ?, ?)', 1,"lgA",400,"img/LGA.png");

@@ -46,6 +46,17 @@ fill() {
         }
 }
 /*
+=======
+	constructor(name, prix, url) {
+        this.name = name;
+        this.prix = prix;
+        this.url = url;
+        produits.push(this);
+	}
+}
+
+
+>>>>>>> 6c2af928eb9ead5445638f018b9a5e17aa27b0aa
 var page = document.createElement('div');
 page.setAttribute('id', "page");
 
@@ -53,6 +64,7 @@ document.body.appendChild(page);
 
 document.getElementById('page').style.display = "flex";
 
+<<<<<<< HEAD
 produit.forEach(function(products, i){
     var elProduits = document.createElement('div');
     
@@ -74,6 +86,29 @@ produit.forEach(function(products, i){
     
     var article = document.createElement('p', "name");
     var articleText = document.createTextNode(products.produits);
+=======
+produits.forEach(function(products, i){
+    var elProduits = document.createElement('div');
+    
+    elProduits.setAttribute('id', products.name);
+    
+    page.appendChild(elProduits);
+    
+    document.getElementById(products.name).style.display ="grid";
+    
+    document.getElementById(products.name).style.border = "1px solid black";
+    
+    document.getElementById(products.name).style.width = "300px";
+    
+    document.getElementById(products.name).style.height = "300px";
+    
+    document.getElementById(products.name).style.margin = "10px";
+    
+    document.getElementById(products.name).style.textAlign = "center";
+    
+    var article = document.createElement('p', "name");
+    var articleText = document.createTextNode(products.name);
+>>>>>>> 6c2af928eb9ead5445638f018b9a5e17aa27b0aa
     article.appendChild(articleText);
     
     elProduits.appendChild(article);
@@ -195,3 +230,4 @@ function clickit() {
 }
 });
 */
+
