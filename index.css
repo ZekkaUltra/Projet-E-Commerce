@@ -1,1 +1,42 @@
-/* comment */
+* {
+	margin: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+}
+
+img {
+	height: 177.5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.cadre {
+	width: 185px;
+	height: 275px;
+	margin: 15px;
+	background-color: white;
+	border: 1.5px solid black;
+	border-radius: 10px;
+}
+.cadre>h1 {
+	width: 100%;
+	height: 45px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	border-radius: 10px 10px 0 0;
+}
+
+.cadreIMG {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
